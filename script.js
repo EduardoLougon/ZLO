@@ -69,31 +69,31 @@ $(document).ready(function(){
 	{
 		name: "Carlos",
 		description:
-			"Rodei 350 km no primeiro dia e 700 km no segundo usando a cueca, e posso dizer que funciona. Em nenhum momento senti necessidade de ajustar nada, embora tenha sentido uma leve pressão. Diferente do normal, não tive desconforto ou necessidade de reposicionar. Alguns amigos acham bobagem, mas quem enfrenta esse problema sabe a diferença que faz. No geral, aprovei!"
+			'"Rodei 350 km no primeiro dia e 700 km no segundo usando a cueca, e posso dizer que funciona. Em nenhum momento senti necessidade de ajustar nada, embora tenha sentido uma leve pressão. Diferente do normal, não tive desconforto ou necessidade de reposicionar. Alguns amigos acham bobagem, mas quem enfrenta esse problema sabe a diferença que faz. No geral, aprovei!"'
 	},
 
 	{
 		name: "Alessandro",
 		description:
-			"Joguei bola com a cueca e foi incrível! Sempre ajusto, mas dessa vez nem lembrei. Para esportes e moto, funciona muito bem. No dia a dia, é muito confortável. Além disso, ajudou no cheiro. Suo muito, mas mesmo após um dia no sol ou jogando bola, nada de odor. Já lavei três vezes e continua ótima. Vou testar mais. Valeu!"
+			'"Joguei bola com a cueca e foi incrível! Sempre ajusto, mas dessa vez nem lembrei. Para esportes e moto, funciona muito bem. No dia a dia, é muito confortável. Além disso, ajudou no cheiro. Suo muito, mas mesmo após um dia no sol ou jogando bola, nada de odor. Já lavei três vezes e continua ótima. Vou testar mais. Valeu!"'
 	},
 
 	{
 		name: "Admar",
 		description:
-			"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"
+			'"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"'
 	},
 
 	{
 		name: "Fernando",
 		description:
-			"A cueca é show de bola! Não enrola, o tecido é leve e muito confortável. Usei por dois dias seguidos e achei ótima para se exercitar. Parece ter uma boa absorção de suor. Tá no caminho certo! Gostei bastante."
+			'"A cueca é show de bola! Não enrola, o tecido é leve e muito confortável. Usei por dois dias seguidos e achei ótima para se exercitar. Parece ter uma boa absorção de suor. Tá no caminho certo! Gostei bastante."'
 	},
 
     {
 		name: "Nsei",
 		description:
-            'A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!'
+            '"A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!"'
 	}
     ];
 
