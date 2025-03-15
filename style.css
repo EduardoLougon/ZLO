@@ -8,6 +8,7 @@ body {
     padding-top: 70px; /*Ajuste conforme a altura do menu*/
     overflow-x: hidden;
     scroll-behavior: smooth;
+    margin: auto;
 }
 
 .bg-primary {
@@ -206,3 +207,16 @@ h6 {
     opacity: 1;
     scale: 1;
 }
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #004a60
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: white
+  }
+
