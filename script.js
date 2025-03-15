@@ -2,7 +2,7 @@ $(document).ready(function(){
     setTimeout(function(){
         // Definir o texto para cada slide
         var text1 = "A sua próxima cueca!";
-        var text2 = "Sua Cueca Premium de Alta Performance";
+        var text2 = "A sua próxima cueca!";
 
         // Função para o efeito de digitação
         function typeWriter(txtElement, txt, i = 0) {
