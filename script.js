@@ -57,5 +57,123 @@ $(document).ready(function(){
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el)=> observer.observe(el));
 
+
+    const reviewWrap = document.getElementById("reviewWrap");
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
+    const personName = document.getElementById("personName");
+    const description = document.getElementById("description");
+    const audio = document.getElementById('audio')
+
+    let people = [
+	{
+		name: "Carlos",
+		description:
+			"Rodei 350 km no primeiro dia e 700 km no segundo usando a cueca, e posso dizer que funciona. Em nenhum momento senti necessidade de ajustar nada, embora tenha sentido uma leve pressão. Diferente do normal, não tive desconforto ou necessidade de reposicionar. Alguns amigos acham bobagem, mas quem enfrenta esse problema sabe a diferença que faz. No geral, aprovei!"
+	},
+
+	{
+		name: "Alessandro",
+		description:
+			"Joguei bola com a cueca e foi incrível! Sempre ajusto, mas dessa vez nem lembrei. Para esportes e moto, funciona muito bem. No dia a dia, é muito confortável. Além disso, ajudou no cheiro. Suo muito, mas mesmo após um dia no sol ou jogando bola, nada de odor. Já lavei três vezes e continua ótima. Vou testar mais. Valeu!"
+	},
+
+	{
+		name: "Admar",
+		description:
+			"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"
+	},
+
+	{
+		name: "Fernando",
+		description:
+			"A cueca é show de bola! Não enrola, o tecido é leve e muito confortável. Usei por dois dias seguidos e achei ótima para se exercitar. Parece ter uma boa absorção de suor. Tá no caminho certo! Gostei bastante."
+	},
+
+    {
+		name: "Nsei",
+		description:
+            'A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!'
+	}
+    ];
+
+    personName.innerText = people[0].name;
+    description.innerText = people[0].description;
+    audio.src = `./audio/${people[0].name}.mp3`
+    let currentPerson = 0;
+
+    //Select the side where you want to slide
+    function slide(whichSide, personNumber) {
+        let reviewWrapWidth = reviewWrap.offsetWidth + "px";
+        let descriptionHeight = description.offsetHeight + "px";
+        //(+ or -)
+        let side1symbol = whichSide === "left" ? "" : "-";
+        let side2symbol = whichSide === "left" ? "-" : "";
+
+        let tl = gsap.timeline();
+
+        tl.to(reviewWrap, {
+            duration: 0.4,
+            opacity: 0,
+            translateX: `${side1symbol + reviewWrapWidth}`
+        });
+
+        tl.to(reviewWrap, {
+            duration: 0,
+            translateX: `${side2symbol + reviewWrapWidth}`
+        });
+
+        setTimeout(() => {
+            description.style.height = descriptionHeight;
+        }, 0);
+        setTimeout(() => {
+            personName.innerText = people[personNumber].name;
+        }, 0);
+        setTimeout(() => {
+            description.innerText = people[personNumber].description;
+        }, 0);
+
+        setTimeout(() => {
+            audio.src = `./audio/${people[personNumber].name}.mp3`
+        }, 0);
+
+        tl.to(reviewWrap, {
+            duration: 0.4,
+            opacity: 1,
+            translateX: 0
+        });
+    }
+
+    function setNextCardLeft() {
+        if (currentPerson === 4) {
+            currentPerson = 0;
+            slide("left", currentPerson);
+        } else {
+            currentPerson++;
+        }
+
+        slide("left", currentPerson);
+    }
+
+    function setNextCardRight() {
+        if (currentPerson === 0) {
+            currentPerson = 4;
+            slide("right", currentPerson);
+        } else {
+            currentPerson--;
+            console.log(1)
+        }
+
+        slide("right", currentPerson);
+    }
+
+    leftArrow.addEventListener("click", setNextCardLeft);
+    rightArrow.addEventListener("click", setNextCardRight);
+
+
+    window.addEventListener("resize", () => {
+        description.style.height = "100%";
+    });
+
 });
 
