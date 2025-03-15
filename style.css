@@ -1,0 +1,221 @@
+body {
+    background-color: #005B78;
+    color: #fff;
+    font-family: 'Candara', sans-serif;
+    /*font-family: 'Mulish', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;*/ /*Light */
+    padding-top: 70px; /*Ajuste conforme a altura do menu*/
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.bg-primary {
+    background-color: #005B78 !important;
+}
+
+.bg-dark {
+    background-color: #231f20 !important;
+}
+
+.bg-dark-light {
+    background-color: #4c4d4f !important;
+}
+
+.btn-primary {
+    background-color: #005B78;
+    border-color: #005B78;
+}
+
+.btn-primary:hover {
+    background-color: #004a60;
+    border-color: #004a60;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#conforto-situacoes {
+    color: #fff;
+}
+
+#conforto-situacoes h3 {
+    /*
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 1px 1px #000;
+    */
+    display: inline-block; /* Garante que a caixa se ajuste ao conteúdo */
+    padding: 5px; /* Adiciona algum espaço interno */
+    border: 2px solid #fff; /* Adiciona uma borda branca */
+    border-radius: 5px; /* Opcional: para bordas arredondadas */
+}
+
+#oferta {
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item img {
+    height: 650px;
+}
+
+@media (max-width: 600px) {
+    #carouselExampleIndicators .carousel-inner .carousel-item img {
+        height: 30vh;
+    }
+    .carousel-caption h2 {
+        font-size: 2.5rem;
+    }
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 1.9s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-item-next.active,
+.carousel-fade .carousel-item-prev.active {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+    opacity: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    opacity: 0; /* Oculta o texto inicialmente */
+    text-shadow: black 1px 0 10px;
+}
+
+header.jumbotron {
+    background-color: #f0f0f0;
+}
+
+
+
+#tecnologia .col-md-3 {
+    margin-bottom: 30px;
+}
+
+#conforto-situacoes img {
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: #343a40;
+}
+
+.modal-title {
+    color: #005B78;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.sec {
+    padding: 25px;
+}
+
+.grid {
+    padding: 0 12.5px;
+}
+
+.tecido {
+    text-align: justify;
+    padding-right: 25px;
+}
+
+.img-tecido {
+    max-height: 55vh;
+    aspect-ratio: 1/1;
+}
+
+
+.central {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+}
+
+.passo {
+    margin-top: 16px;
+}
+
+h6 {
+    margin-bottom: 15px;
+}
+
+.lead {
+    text-align: justify;
+}
+
+.hidden {
+    opacity: 0;
+    scale: 1;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    scale: 1;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #004a60
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: white
+  }
+
