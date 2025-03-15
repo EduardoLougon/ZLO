@@ -327,11 +327,15 @@ h1 {
 }
 
 #personName {
-	margin-bottom: calc(0.7rem + 0.5vmin);
 	font-size: calc(1rem + 0.5vmin);
 	letter-spacing: calc(0.1rem + 0.1vmin);
 	font-weight: bold;
     color: black;
+}
+
+#personProf {
+    color: black;
+    margin-bottom: 15px;
 }
 
 #description {

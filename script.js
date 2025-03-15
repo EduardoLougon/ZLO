@@ -62,43 +62,50 @@ $(document).ready(function(){
     const leftArrow = document.getElementById("leftArrow");
     const rightArrow = document.getElementById("rightArrow");
     const personName = document.getElementById("personName");
+    const personProf = document.getElementById("personProf");
     const description = document.getElementById("description");
     const audio = document.getElementById('audio')
 
     let people = [
 	{
-		name: "Carlos",
+		name: "Carlos Bergamasch",
 		description:
-			'"Rodei 350 km no primeiro dia e 700 km no segundo usando a cueca, e posso dizer que funciona. Em nenhum momento senti necessidade de ajustar nada, embora tenha sentido uma leve pressão. Diferente do normal, não tive desconforto ou necessidade de reposicionar. Alguns amigos acham bobagem, mas quem enfrenta esse problema sabe a diferença que faz. No geral, aprovei!"'
+			'"Rodei 350 km no primeiro dia e 700 km no segundo usando a cueca, e posso dizer que funciona. Em nenhum momento senti necessidade de ajustar nada, embora tenha sentido uma leve pressão. Diferente do normal, não tive desconforto ou necessidade de reposicionar. Alguns amigos acham bobagem, mas quem enfrenta esse problema sabe a diferença que faz. No geral, aprovei!"',
+        prof: "Empresário"
 	},
 
 	{
-		name: "Alessandro",
+		name: "Alessandro Filí",
 		description:
-			'"Joguei bola com a cueca e foi incrível! Sempre ajusto, mas dessa vez nem lembrei. Para esportes e moto, funciona muito bem. No dia a dia, é muito confortável. Além disso, ajudou no cheiro. Suo muito, mas mesmo após um dia no sol ou jogando bola, nada de odor. Já lavei três vezes e continua ótima. Vou testar mais. Valeu!"'
+			'"Joguei bola com a cueca e foi incrível! Sempre ajusto, mas dessa vez nem lembrei. Para esportes e moto, funciona muito bem. No dia a dia, é muito confortável. Além disso, ajudou no cheiro. Suo muito, mas mesmo após um dia no sol ou jogando bola, nada de odor. Já lavei três vezes e continua ótima. Vou testar mais. Valeu!"',
+        prof: "Empresário"
 	},
 
 	{
 		name: "Admar",
 		description:
-			'"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"'
+			'"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"',
+        prof: "Empresário"
 	},
 
 	{
-		name: "Fernando",
+		name: "Fernando Rocha",
 		description:
-			'"A cueca é show de bola! Não enrola, o tecido é leve e muito confortável. Usei por dois dias seguidos e achei ótima para se exercitar. Parece ter uma boa absorção de suor. Tá no caminho certo! Gostei bastante."'
+			'"A cueca é show de bola! Não enrola, o tecido é leve e muito confortável. Usei por dois dias seguidos e achei ótima para se exercitar. Parece ter uma boa absorção de suor. Tá no caminho certo! Gostei bastante."',
+        prof: "Personal Trainer"
 	},
 
     {
-		name: "Nsei",
+		name: "William",
 		description:
-            '"A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!"'
+            '"A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!"',
+        prof: "Engenheiro de Software"
 	}
     ];
 
     personName.innerText = people[0].name;
     description.innerText = people[0].description;
+    personProf.innerText = people[0].prof
     audio.src = `./audio/${people[0].name}.mp3`
     let currentPerson = 0;
 
@@ -135,6 +142,10 @@ $(document).ready(function(){
 
         setTimeout(() => {
             audio.src = `./audio/${people[personNumber].name}.mp3`
+        }, 0);
+
+        setTimeout(() => {
+            personProf.innerText = people[personNumber].prof;
         }, 0);
 
         tl.to(reviewWrap, {
