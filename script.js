@@ -96,7 +96,7 @@ $(document).ready(function(){
 	},
 
     {
-		name: "William",
+		name: "William Maiques",
 		description:
             '"A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!"',
         prof: "Engenheiro de Software"
