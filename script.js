@@ -82,7 +82,7 @@ $(document).ready(function(){
 	},
 
 	{
-		name: "Admar",
+		name: "Admar Morgan",
 		description:
 			'"Ficou espetacular! Parece que nem tenho o órgão de tão confortável. Nada de ficar colado na perna ou prensado. Antes, era um estresse ter que me mexer na moto para aliviar, mas agora nem sinto que tá ali. Espetacular!"',
         prof: "Empresário"
@@ -100,7 +100,38 @@ $(document).ready(function(){
 		description:
             '"A cueca é perfeita! O tamanho ficou ótimo e o tecido é de qualidade, muito confortável. Parece que estou quase pelado, mas a divisão das partes mantém tudo separado de maneira incrível. Compreendi o propósito, e realmente faz sentido. É um sucesso! Quero mais, tem outras cores? Vai me pagar com cueca? (risos) Muito bom, essencial!"',
         prof: "Engenheiro de Software"
-	}
+	},
+
+    {
+		name: "Alan Abi Madi",
+		description:
+            '"Usei a cueca sexta-feira e preciso dizer: muito boa mesmo! Confortável, firme e não fica descendo ou enrolando, coisa que sempre me incomoda em outras. Segura bem e me senti super à vontade o tempo todo. Dá pra usar o dia inteiro sem nem lembrar que tá usando. Gostei bastante!"',
+        prof: "Advogado"
+	},
+    {
+		name: "Fernando Ferreira",
+		description:
+            '"A costura é excelente, não machuca nem atrapalha, e segurou muito bem, melhor que as gringas. Andei de moto naked, que costuma apertar tudo ali, mas dessa vez nada de incômodo. Só achei um pouco grande na cintura, mas no geral, tá mais que aprovada!""',
+        prof: "Empresário"
+	},
+    {
+		name: "Jonathan",
+		description:
+            '"O pessoal tá adorando a cueca! Um amigo, que viaja de moto BMW, disse que resolveu um problema enorme e sugeriu até uma versão segunda pele. Achou o tecido incrível, comparou com produtos caros e quer levar a ideia para uma boutique de motoqueiros. Vai testar em uma viagem de 2000 km e depois me dá um feedback. O pessoal do esporte também elogiou muito. Tá fazendo sucesso!"',
+        prof: "Profissional de Marketing"
+	},
+    {
+		name: "Cecílio Campos",
+		description:
+            '"Usei a cueca para pedalar e achei super confortável. Percebi que a região genital fica mais protegida, o que melhorou muito a experiência. Não sei como seria na moto, mas na bike fez bastante diferença. Parabéns, a ideia é muito boa!"',
+        prof: "Administrador"
+	},
+    {
+		name: "Frederico",
+		description:
+            '"No início, a cueca causou um leve desconforto por ser uma sensação nova, mas logo me acostumei e funcionou bem, mantendo tudo firme e elevado. Passei para um amigo urologista e dois motoqueiros, e todos gostaram. Na moto, faz muita diferença, evitando incômodos. No futebol, também se saiu muito bem."',
+        prof: "Urologista"
+	},
     ];
 
     personName.innerText = people[0].name;
@@ -156,7 +187,7 @@ $(document).ready(function(){
     }
 
     function setNextCardLeft() {
-        if (currentPerson === 4) {
+        if (currentPerson === 9) {
             currentPerson = 0;
             slide("left", currentPerson);
         } else {
@@ -168,7 +199,7 @@ $(document).ready(function(){
 
     function setNextCardRight() {
         if (currentPerson === 0) {
-            currentPerson = 4;
+            currentPerson = 9;
             slide("right", currentPerson);
         } else {
             currentPerson--;
