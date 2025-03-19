@@ -127,10 +127,34 @@ $(document).ready(function(){
         prof: "Administrador"
 	},
     {
-		name: "Frederico",
+		name: "Eduardo Duarte",
 		description:
-            '"No início, a cueca causou um leve desconforto por ser uma sensação nova, mas logo me acostumei e funcionou bem, mantendo tudo firme e elevado. Passei para um amigo urologista e dois motoqueiros, e todos gostaram. Na moto, faz muita diferença, evitando incômodos. No futebol, também se saiu muito bem."',
-        prof: "Urologista"
+            '"Achei a cueca completamente inovadora! Traz um conforto diferenciado, acomodando bem sem precisar de ajustes constantes. Como cirurgião, passo muito tempo em pé, e foi extremamente prática para mim. Já virou minha escolha para cirurgias longas. Parabéns pelo trabalho!"',
+        prof: "Cirurgião Plástico"
+	},
+    {
+		name: "Antônio Augusto",
+		description:
+            '"Rapaz, essa cueca é realmente diferenciada! Viajei, dirigi por horas e o conforto é incrível, sem incômodo nenhum. Além disso, não retém cheiro, impressionante! Tem que lançar logo. Sucesso pra você!"',
+        prof: "Produtor de Eventos"
+	},
+    {
+		name: "Ronaldo Aguiar",
+		description:
+            '"Cara, que cueca maneira! Usei na moto e foi super confortável, sem incômodo nenhum. Tá de parabéns! Quando começar a vender, me avisa que eu quero comprar. Abraço!"',
+        prof: "Corretor de Imóveis"
+	},
+    {
+		name: "Flávia Reis",
+		description:
+            '"Meu marido achou maravilhosa! O tecido é de qualidade e a ideia realmente inovadora. Ele se sentiu super confortável e sempre pergunta se já tá seco pra usar de novo. A separação do órgão fez toda a diferença, e como ele caminha todo dia na praia, aprovou totalmente. Quer mais!"',
+        prof: "Profissional"
+	},
+    {
+		name: "Rico",
+		description:
+            '"Pô, Rodrigo, até que enfim você acertou! Essa cueca é show de bola para ciclistas, motociclistas e qualquer um que faz atividade física. Parabéns, mandou bem demais!"',
+        prof: "Personal Trainer"
 	},
     ];
 
@@ -187,7 +211,7 @@ $(document).ready(function(){
     }
 
     function setNextCardLeft() {
-        if (currentPerson === 9) {
+        if (currentPerson === 13) {
             currentPerson = 0;
             slide("left", currentPerson);
         } else {
@@ -199,7 +223,7 @@ $(document).ready(function(){
 
     function setNextCardRight() {
         if (currentPerson === 0) {
-            currentPerson = 9;
+            currentPerson = 13;
             slide("right", currentPerson);
         } else {
             currentPerson--;

@@ -234,7 +234,7 @@ body::-webkit-scrollbar {
     color: #005B78;
     border: 2px solid #005B78;
     border-radius: 34px;
-    background-color: white;
+    background-color: rgb(255, 238, 0);
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
@@ -259,7 +259,7 @@ body::-webkit-scrollbar {
   }
   
   .call:hover {
-    color: white;
+    color: rgb(255, 238, 0);
     scale: 1.1;
     box-shadow: 0 0px 20px #343a40;
   }
