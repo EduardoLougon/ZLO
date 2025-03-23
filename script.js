@@ -159,7 +159,7 @@ $(document).ready(function(){
     {
 		name: "Frederico Soyka",
 		description:
-            '"Pô, Rodrigo, até que enfim você acertou! Essa cueca é show de bola para ciclistas, motociclistas e qualquer um que faz atividade física. Parabéns, mandou bem demais!"',
+            '"Testei a cueca e, no início, senti um leve desconforto, mas logo me acostumei. Ela realmente dá sustentação e mantém tudo no lugar. Um amigo urologista também aprovou, e dois motociclistas disseram que fez muita diferença no conforto ao pilotar. Joguei bola com ela e foi excelente."',
         prof: "Urologista"
 	},
     ];
@@ -217,7 +217,7 @@ $(document).ready(function(){
     }
 
     function setNextCardLeft() {
-        if (currentPerson === 13) {
+        if (currentPerson === 14) {
             currentPerson = 0;
             slide("left", currentPerson);
         } else {
@@ -229,7 +229,7 @@ $(document).ready(function(){
 
     function setNextCardRight() {
         if (currentPerson === 0) {
-            currentPerson = 13;
+            currentPerson = 14;
             slide("right", currentPerson);
         } else {
             currentPerson--;
