@@ -156,6 +156,12 @@ $(document).ready(function(){
             '"Pô, Rodrigo, até que enfim você acertou! Essa cueca é show de bola para ciclistas, motociclistas e qualquer um que faz atividade física. Parabéns, mandou bem demais!"',
         prof: "Personal Trainer"
 	},
+    {
+		name: "Frederico Soyka",
+		description:
+            '"Pô, Rodrigo, até que enfim você acertou! Essa cueca é show de bola para ciclistas, motociclistas e qualquer um que faz atividade física. Parabéns, mandou bem demais!"',
+        prof: "Urologista"
+	},
     ];
 
     personName.innerText = people[0].name;

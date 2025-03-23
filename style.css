@@ -178,6 +178,7 @@ footer {
 .img-tecido {
     max-height: 55vh;
     aspect-ratio: 1/1;
+    height: fit-content;
 }
 
 
@@ -382,4 +383,37 @@ h1 {
 	.content-wrapper {
 		width: 100%;
 	}
+}
+
+.gridAdv {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    margin: 20px;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon {
+    width: 60px;
+}
+
+.img-modal {
+    width: 30%;
+}
+
+.topic h1 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.tecidoBox {
+    display: flex;
+    justify-content: center;
 }
